@@ -1,0 +1,255 @@
+
+.lgo{
+    border: 2px solid #00628B;
+    background-color: #00628B;
+    height: 200px;
+}
+.lgo img{
+  margin-top: 7px;
+  margin-left: 40px;
+  height: 180px ;
+  width: 180px ;
+}
+
+.lgo h3{
+  font-family: Century Gothic;
+    margin: 240px;
+    padding: 0px;
+    right: 110px;
+    margin-top: -110px;
+    color: white;
+}
+#myTab{
+  overflow-x: scroll !important;
+  overflow-y: hidden;
+}
+
+.home h1{
+  color: #00628B;
+  text-align: center;
+  padding-top: 20px;
+}
+.home h3{
+  font-family:  Candara;
+  color: #00628B;
+  text-align: center;
+  padding-top: 10px;
+}
+.contact a{
+  color: #00628B;
+}
+/* .foot{
+  position: fixed;
+  left: 0;
+   bottom: 0;
+} */
+.foot h4{
+  
+  margin: 0px;
+  padding: 7px;
+  border-radius: 100px  100px 100px 100px;
+  opacity: 0.7;
+  color: white;
+  background: black;
+  text-align: center;
+  height: 50px;
+}
+.about img{
+  width:900px;
+  height:500px;
+  margin-top: 35px;
+  margin-left: 150px;
+}
+.about h2{
+  margin-top: 30px;
+  border: 2px solid #00628B;
+  color: white;
+  background-color: #00628B;
+  text-align: center;
+}
+.about h4{
+  font-family:  Calibri;
+  margin: 20px;
+}
+.course h1{
+  text-align: center;
+}
+.course h2 , h3 , h4{
+  margin: 10px;
+}
+.course h6{
+  margin: 10px;
+  font-family:  Consolas;
+}
+.staff h1{
+  text-align: center;
+}
+.staff h3{
+  margin-top: 10px;
+  padding: 5px;
+  border: 2px solid #00628B;
+  color: white;
+  background-color: #00628B;
+  text-align: center;
+}
+
+.non h3{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 5px;
+  border: 2px solid #00628B;
+  color: white;
+  background-color: #00628B;
+  text-align: center;
+}
+.facility h1{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.facility h3{
+  text-align: center;
+}
+
+.facility h5 {
+  margin: 20px;
+  font-family: Calibri;
+}
+.pre-paper{
+  text-align: center;
+}
+.pre-paper a{
+  border: 2px solid;
+  color: #00628B;
+  /* background: black; */
+}
+.notification{
+  text-align: center;
+}
+.notification a{
+   border: 2px solid;
+  color: #00628B;
+}
+.result{
+  text-align: center;
+}
+.result a{
+   border: 2px solid;
+  color: #00628B;
+}
+.syllabus{
+  text-align: center;
+}
+.syllabus a{
+   border: 2px solid;
+  color: #00628B;
+}
+.mark{
+  text-align: center;
+}
+.mark a{
+   border: 2px solid;
+  color: #00628B;
+}
+.eform{
+  text-align: center;
+}
+.eform a{
+   border: 2px solid;
+  color: #00628B;
+}
+.pro{
+  text-align: center;
+}
+.pro a{
+   border: 2px solid;
+  color: #00628B;
+}
+
+.nav{
+  flex-wrap: nowrap !important;
+}
+.sbtn{
+  /* margin-top: 10px; */
+  margin: 0px;
+  width: 180px;
+  height: 50px;
+  /* font-size: 10px; */
+}
+
+/* Scroll bar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00628B; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2c84aa; 
+}
+#first{
+  margin: 40px;
+  padding-top: 10px;
+  padding: 60px;
+  align-items: center;
+}
+
+#sec{
+  margin: 40px;
+  padding-top: 10px;
+  padding: 60px;
+  align-items: center;
+}
+
+#third{
+  margin: 40px;
+  padding-top: 10px;
+  padding: 60px;
+  align-items: center;
+}
+#four{
+  margin: 40px;
+  padding-top: 10px;
+  padding: 60px;
+  align-items: center;
+}
+#five{
+  margin: 40px;
+  padding-top: 10px;
+  padding: 60px;
+  align-items: center;
+}
+#six{
+  margin: 40px;
+  padding-top: 10px;
+  padding: 60px;
+  align-items: center;
+}
+
+/* @media(max-width: 767px){
+  img{
+
+  }
+  nav{
+
+  }
+  .class{
+
+  }
+  #id{
+
+  }
+} */
+
