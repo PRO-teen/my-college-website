@@ -1,0 +1,140 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import React, { useState } from "react";
+import { StyleSheet, Text, View, FlatList } from "react-native";
+import { SearchBar } from "react-native-elements";
+import Header from "./components/Header";
+import TodosItem from "./components/TodosItem";
+import AddTodo from "./components/addTodo";
+
+const App = () => {
+
+  const [search, setSearch] = useState("");
+
+  const [todos, setTodos] = useState([
+    { text: "Coffee", key: "1" },
+    { text: "Milk", key: "2" },
+    { text: "Brown Bread", key: "3" },
+  ]);
+  const updateSearch = (search) => {
+    setSearch(search);
+  };
+
+  const pressHandler =(key) => {
+    setTodos((prevTodos) => {
+      return prevTodos.filter(todo => todo.key != key);
+    })
+  }
+
+const submitHandler = (text) =>{
+  setTodos((prevTodos) => {
+    return[
+    {text : text,key:Math.random().toString()},
+    ...prevTodos
+    ]
+  })
+}
+
+
+  return (
+    <View style={styles.container}>
+      <Header />
+
+  <SearchBar
+        placeholder="Search Here..."
+        lightTheme
+        round
+        value={search}
+        onChangeText={ updateSearch}
+      />
+
+      <View style={styles.content}>
+        <AddTodo submitHandler={submitHandler} />
+        <View style={styles.list}>
+          <FlatList
+            data={todos}
+            renderItem={({ item }) => (
+              <TodosItem item={item} pressHandler={pressHandler} />
+            )}
+          />
+        </View>
+      </View>
+    </View>
+  );
+};
+
+export default App;
+
+const styles = StyleSheet.create({
+  container: {},
+  content: {
+    padding: 40,
+  },
+});
+
+
+
+
+addTodo
+import { StyleSheet, Text, View , TextInput  ,Button} from 'react-native'
+import React , {useState} from 'react'
+
+const addTodo = ({submitHandler}) => {
+    const [ text , setText] = useState('');
+
+    const changeHandler = (val) =>{
+        setText(val);
+    }
+  return (
+    <View>
+      <TextInput
+      style={styles.input}
+      placeholder='new todo...'
+      onChangeText={changeHandler}
+       />
+       <Button 
+       style={styles.button}
+        onPress={() => submitHandler(text)} title="+" color="coral" />
+    </View>
+  )
+}
+
+export default addTodo
+
+const styles = StyleSheet.create({
+    input:{
+        marginBottom:10,
+        paddingHorizontal:8,
+        paddingVertical:6,
+        borderBottomWidth:1,
+        borderBottomColor:"grey"
+
+    },
+})
